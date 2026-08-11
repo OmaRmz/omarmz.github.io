@@ -1,7 +1,592 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Omar Gonzalez - Full Stack Developer</title>
+
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+
+  <main>
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.png" alt="Omar Gonzalez" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Omar Gonzalez">Omar Gonzalez</h1>
+          <p class="title">Full Stack Developer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span data-lang-key="show_contacts">Mostrar Contactos</span>
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title" data-lang-key="email">Email</p>
+              <a href="mailto:omar29957@gmail.com" class="contact-link">omar29957@gmail.com</a>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title" data-lang-key="phone">Teléfono</p>
+              <a href="tel:+523328358351" class="contact-link">+52 (33) 2835 8351</a>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title" data-lang-key="location">Ubicación</p>
+              <address>Guadalajara, Jalisco, Mexico</address>
+            </div>
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://linkedin.com/in/omar-gonram/" class="social-link" target="_blank"
+              rel="noopener noreferrer">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://github.com/omarmz" class="social-link" target="_blank" rel="noopener noreferrer">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+    <div class="main-content">
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link active" data-nav-link data-lang-key="about_me">Sobre mí</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link data-lang-key="resume">Curriculum</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link data-lang-key="portfolio">Portfolio</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link data-lang-key="contact">Contacto</button>
+          </li>
+
+          <li class="navbar-item lang-toggle">
+            <button class="lang-btn" data-lang-toggle>
+              <span class="lang-option active" data-lang="es">ES</span>
+              <span class="lang-option" data-lang="en">EN</span>
+            </button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <article class="about active" data-page="sobre mi">
+
+        <header>
+          <h2 class="h2 article-title" data-lang-key="about_me">Sobre mí</h2>
+        </header>
+
+        <section class="about-text">
+          <p data-lang-key="about_text_1">
+            Soy un Full Stack Software Developer con experiencia en el desarrollo de sistemas empresariales, APIs y
+            aplicaciones web escalables. Me especializo en PHP/Laravel, bases de datos y arquitectura de software.
+          </p>
+          <p data-lang-key="about_text_2">
+            Mi enfoque esta en crear soluciones robustas y mantenibles que resuelvan problemas reales de negocio.
+            Disfruto refactorizar código legado, optimizar rendimiento y construir herramientas que faciliten el trabajo
+            de los equipos.
+          </p>
+        </section>
+
+        <section class="service">
+
+          <h3 class="h3 service-title" data-lang-key="what_i_do">Lo que hago</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title" data-lang-key="backend_dev">Desarrollo Backend</h4>
+                <p class="service-item-text" data-lang-key="backend_desc">
+                  APIs REST, microservicios, autenticación y lógica de negocio con Laravel, Lumen y PHP.
+                </p>
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg" alt="design icon" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title" data-lang-key="frontend_dev">Desarrollo Frontend</h4>
+                <p class="service-item-text" data-lang-key="frontend_desc">
+                  Interfaces interactivas y dashboards administrativos con Filament, Livewire, AlpineJS y JavaScript.
+                </p>
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title" data-lang-key="devops_cloud">DevOps y Cloud</h4>
+                <p class="service-item-text" data-lang-key="devops_desc">
+                  Despliegue con Docker, servicios en AWS y automatización de procesos en la nube.
+                </p>
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title" data-lang-key="db_optimization">Optimizacion de BD</h4>
+                <p class="service-item-text" data-lang-key="db_desc">
+                  Consultas optimizadas, índices avanzados y normalización en SQL Server y MySQL.
+                </p>
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title" data-lang-key="technical_skills">Habilidades Técnicas</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Backend</h5>
+                <data value="95">PHP, Laravel, Lumen, REST APIs</data>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Frontend</h5>
+                <data value="85">Filament, Livewire, AlpineJS, JavaScript</data>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Databases</h5>
+                <data value="90">SQL Server, MySQL</data>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Cloud</h5>
+                <data value="80">AWS, Lambda</data>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">DevOps</h5>
+                <data value="75">Docker</data>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Testing</h5>
+                <data value="70">PHPUnit,PEST</data>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Tools</h5>
+                <data value="85">Git, Composer, npm</data>
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title" data-lang-key="resume">Curriculum</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+            <h3 class="h3" data-lang-key="education">Educación</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Universidad Tecnológica de Guadalajara</h4>
+              <span>Ago 2019 - Jun 2022</span>
+              <p class="timeline-text" data-lang-key="degree">
+                Ingeniería en Computación
+              </p>
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+            <h3 class="h3" data-lang-key="experience">Experiencia</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Grupo Polesa - Ingeniero de Software Sr</h4>
+              <span>Ago 2024 - <span data-lang-key="present">Actualidad</span></span>
+              <p class="timeline-text" data-lang-key="exp_polesa">
+                Refactorización de sistemas legados en PHP (CodeIgniter 3) hacia Laravel 12, logrando un código 70% más
+                mantenible y fiable. Optimizacion de consultas en SQL Server en mas del 85%. Desarrollo de nuevas
+                funcionalidades para la manufactura de postes nacionales e internacionales.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Cactus Feliz - PHP Programmer</h4>
+              <span>Ene 2024 - May 2024</span>
+              <p class="timeline-text" data-lang-key="exp_cactus">
+                Implementación de un panel administrativo con Filament 3.0, reduciendo el tiempo de gestión de pedidos
+                en un 70%. Diseño de pruebas unitarias con PEST y documentación logrando una cobertura de código del
+                90%.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Enlace Fiscal - Backend Developer</h4>
+              <span>Jun 2021 - Dic 2023</span>
+              <p class="timeline-text" data-lang-key="exp_enlace">
+                Creación de APIs REST usando microservicios para la automatización de facturación del SaaS, reduciendo
+                errores en un 45%. Implementación de lambdas en AWS con Python, mejorando la fiabilidad del código en un
+                80%.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Homeosystems - Full-stack Laravel Developer</h4>
+              <span>Mar 2019 - Abr 2021</span>
+              <p class="timeline-text" data-lang-key="exp_homeosystems">
+                Desarrollo de sistemas utilizando Laravel, Livewire, Bootstrap y AWS. Integracion de la API de Openpay,
+                optimizando el proceso de compra en un 75%. Desarrollo de módulo administrativo para CRUD de pacientes,
+                medicamentos, cursos y blog.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Softernium - Full-stack Developer</h4>
+              <span>Jun 2017 - Mar 2019</span>
+              <p class="timeline-text" data-lang-key="exp_softernium">
+                Diseño y desarrollo de dashboards de usuarios y sistema de gestión de roles, manejando perfiles para más
+                de 100 usuarios. Generación de informes automáticos en PDF y CSV, reduciendo el tiempo de generación en
+                mas del 50%.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Cloud Consulting & Design - Desarrollador Jr</h4>
+              <span>Ene 2016 - Jun 2017</span>
+              <p class="timeline-text" data-lang-key="exp_cloud">
+                Desarrollo en distintos proyectos para uno de sus productos. Desarrollo del FrontEnd con HTML, CSS,
+                JavaScript, jQuery, llamadas AJAX y Bases de Datos como MySQL y SQL Server, asi como el BackEnd (PHP)
+                para extraer los datos provenientes de un VoIP y plasmarlos en un Dashboard en tiempo real.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Robotica Automatizacion y Multiservicios - Asistente de Programacion
+              </h4>
+              <span>Abr 2015 - Jun 2015</span>
+              <p class="timeline-text" data-lang-key="exp_robotica">
+                Asistencia en tareas de programación y desarrollo de software.
+              </p>
+            </li>
+
+          </ol>
+
+        </section>
+
+      </article>
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title" data-lang-key="portfolio">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Laravel</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>PHP</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Full Stack</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value data-lang-key="select_category">Seleccionar categoría</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Laravel</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>PHP</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Full Stack</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item active" data-filter-item data-category="laravel full stack">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/portalpolesa.png" alt="Polesa" loading="lazy">
+                </figure>
+
+                <h3 class="project-title" data-lang-key="project_polesa">Polesa - Sistema de Manufactura</h3>
+                <p class="project-category">Laravel / Full Stack</p>
+
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="laravel php">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/cactusfeliz.png" alt="Cactus Feliz" loading="lazy">
+                </figure>
+
+                <h3 class="project-title" data-lang-key="project_cactus">Cactus Feliz - Panel Administrativo</h3>
+                <p class="project-category">Laravel / Filament</p>
+
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="php laravel">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/enlacefiscal.png" alt="Enlace Fiscal" loading="lazy">
+                </figure>
+
+                <h3 class="project-title" data-lang-key="project_enlace">Enlace Fiscal - API Facturacion</h3>
+                <p class="project-category">PHP / Laravel / AWS</p>
+
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="laravel full stack">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/homeosystems.png" alt="Homeosystems" loading="lazy">
+                </figure>
+
+                <h3 class="project-title" data-lang-key="project_homeosystems">Homeosystems - Sistema de Salud</h3>
+                <p class="project-category">Laravel / Livewire / AWS</p>
+
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="php full stack">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/globalwifi.png" alt="Global WiFi" loading="lazy">
+                </figure>
+
+                <h3 class="project-title" data-lang-key="project_globalwifi">Global WiFi - Dashboards</h3>
+                <p class="project-category">Laravel / AngularJS</p>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+      <article class="contact" data-page="contacto">
+
+        <header>
+          <h2 class="h2 article-title" data-lang-key="contact">Contacto</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199666.5651251294!2d-103.39!3d20.67!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428b0a0143c1363%3A0x6a0e4a0e4a0e4a0e!2sGuadalajara%2C%20Jalisco%2C%20Mexico!5e0!3m2!1sen!2s!4v1647608789441!5m2!1sen!2s"
+              width="400" height="300" loading="lazy"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title" data-lang-key="contact_form">Formulario de Contacto</h3>
+
+          <form action="https://formspree.io/f/mppadzpv" method="POST" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Nombre completo" required
+                data-form-input data-lang-placeholder="full_name">
+
+              <input type="email" name="email" class="form-input" placeholder="Dirección de email" required
+                data-form-input data-lang-placeholder="email_address">
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Tu Mensaje" required data-form-input
+              data-lang-placeholder="your_message"></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span data-lang-key="send_message">Enviar Mensaje</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+  <script src="./assets/js/script.js"></script>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
+
 </html>
