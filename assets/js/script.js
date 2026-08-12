@@ -187,9 +187,8 @@ var filterItems = document.querySelectorAll("[data-filter-item]");
 
 function filterFunc(selectedValue) {
   for (var i = 0; i < filterItems.length; i++) {
-    if (selectedValue === "all") {
-      filterItems[i].classList.add("active");
-    } else if (selectedValue === filterItems[i].dataset.category) {
+    var category = filterItems[i].dataset.category;
+    if (selectedValue === "all" || category.indexOf(selectedValue) !== -1) {
       filterItems[i].classList.add("active");
     } else {
       filterItems[i].classList.remove("active");
